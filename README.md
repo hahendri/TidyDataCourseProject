@@ -1,14 +1,3 @@
----
-title: "README"
-author: "Harland Hendricks"
-date: "April 11, 2018"
-output: md_document:
-    variant: markdown_github
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 #Assignment
 
 The purpose of this project is to demonstrate your ability to collect, work with, and clean a data set.
@@ -41,26 +30,31 @@ From the data set in step 4, creates a second, independent tidy data set with th
 
 Good luck!
 
+-----
+
 #To get output data files:
 
 1. Choose your working directory
 2. Open R script `run_analysis.R`
 3. Run `run_analysis.R`.  This will do the following:
 
-* Install dplyr library
-* Create data directory and download the data
-* Read all data files into tables
-* `rbind` data frames and remove originals
-* Get x_data variable names as character vector
-* Replace x_data colnames with column names from `features.txt`
-* Replace y_data colname with "activity"
-* Replace s_data colname with "subject"
-* `cbind` all three data frames into one and remove individual data frames
-* Replace row values in "activity" column with activites and make column names lower case
-* Select only mean and standard deviation for measurements and `write.table`
-* Arrange by subject and activity and return mean for all variables and `write.table`
+        * Install dplyr library
+        * Create data directory and download the data
+        * Read all data files into tables
+        * `rbind` data frames and remove originals
+        * Get x_data variable names as character vector
+        * Replace x_data colnames with column names from `features.txt`
+        * Replace y_data colname with "activity"
+        * Replace s_data colname with "subject"
+        * `cbind` all three data frames into one and remove individual data frames
+        * Replace row values in "activity" column with activites and make column names lower case
+        * Select only mean and standard deviation for measurements and `write.table`
+        * Arrange by subject and activity and return mean for all variables and `write.table`
+
+-----
 
 #Output files
 
 1. Tidy data file `tidydata_1.txt` 30 subjects and 6 activities with 68 `mean()` and `std()` variables 
 2. Tidy data file `tidydata_2.txt` grouped by `subject` and `activity` with `means`
+

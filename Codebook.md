@@ -1,15 +1,3 @@
----
-title: "CodeBook"
-author: "Harland Hendricks"
-date: "April 11, 2018"
-output:  md_document:
-    variant: markdown_github
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
 ##Variables
 
 **`train` includes 70% of subjects and `test` includes 30%**
@@ -91,7 +79,7 @@ The complete list of variables of each feature vector is available in 'features.
 
 ##Data
 
-**###From `README.txt`**
+**From `README.txt`**
 
 ==================================================================
 Human Activity Recognition Using Smartphones Dataset
@@ -178,3 +166,4 @@ Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012
 * Replace row values in "activity" column with activites and make column names lower case
 * Select only mean and standard deviation for measurements and `write.table`
 * Arrange by subject and activity and return mean for all variables and `write.table`
+

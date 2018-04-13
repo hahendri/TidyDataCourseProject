@@ -1,4 +1,4 @@
-##Variables
+## Variables
 
 **`train` includes 70% of subjects and `test` includes 30%**
 
@@ -77,7 +77,7 @@ The complete list of variables of each feature vector is available in 'features.
 
 -----
 
-##Data
+## Data
 
 **From `README.txt`**
 
@@ -154,7 +154,7 @@ Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012
 
 -----
 
-##Transformations and Work
+## Transformations and Work
 
 * Read all data files into tables
 * `rbind` data frames and remove originals

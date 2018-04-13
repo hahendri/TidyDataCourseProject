@@ -47,4 +47,4 @@ write.table(tidydata_1, "./tidydata_1.txt")
 tidydata_2 <- tidydata_1 %>%
         group_by(subject, activity) %>%
         summarise_all(mean)
-write.table(tidydata_2, "./tidydata_2.txt")
+write.table(tidydata_2, "./tidydata_2.txt", row.name = FALSE)
